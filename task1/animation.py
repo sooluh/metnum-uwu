@@ -3,8 +3,44 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import seaborn as sns
 
-%matplotlib inline
 sns.set()
+
+
+def f(x):
+    return 2.05*x**3-1.12*x**3-4.23
+
+
+# global variabel untuk animasi grafik
+root = 0
+
+
+def bisection(a, b, e=10**-4, n=100):
+    step = 1
+    condition = True
+
+    while condition:
+        c = (a + b) / 2
+
+        if f(a) * f(c) < 0:
+            b = c
+        else:
+            a = c
+
+        step = step + 1
+        condition = abs(f(c)) > e and step <= n
+
+    # tetapkan nilai dari variabel c ke variabel root (global variabel)
+    root = c
+
+
+a = float(1)
+b = float(2)
+
+if f(a) * f(b) > 0.0:
+    print('Nilai yang diberikan harus diantara akar.')
+else:
+    bisection(a, b)
+
 
 top = 0.75
 bottom = 2.25
@@ -67,7 +103,6 @@ def animate(i):
 
 
 plt.rcParams['animation.html'] = 'html5'
-anim = animation.FuncAnimation(fig, animate, frames=len(
-    xa), blit=False, repeat=True, interval=100)
+anim = animation.FuncAnimation(fig, animate, frames=len(xa), blit=False, repeat=True, interval=100)
 plt.close()
-anim
+anim.save('bisection.gif', writer='imagemagick', fps=18)

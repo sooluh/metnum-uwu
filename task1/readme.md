@@ -31,3 +31,5 @@ f(x) = 2.05x^3-1.12x^3-4.23
 - Jupyter notebook [are here](./bisection.ipynb) too
 - Excel file with graph method, [download this!](./table.xlsx)
 - Excel file with bisection method, [here](./bisection.xlsx)
+
+![Bisection Animation](./bisection.gif)
