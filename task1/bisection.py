@@ -9,6 +9,7 @@ def f(x):
     """
     return 2.05*x**3-1.12*x**3-4.23
 
+
 """
 fungsi "bisection" memiliki empat parameter (a, b, e dan n)
 parameter e bersifat opsional, secara default terisi sebagai 10^-4 (0.0001)
@@ -82,6 +83,7 @@ def bisection(a, b, e=10**-4, n=100):
     maka artinya, kita sudah menemukan akarnya
     """
     print('\nDitemukan, akarnya adalah: %0.4f' % c)
+
 
 """
 pada screenshot di atas, menggunakan metode tabel untuk menentukan batas bawah dan batas atas
