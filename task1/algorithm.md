@@ -1,52 +1,45 @@
 # Algorithm
 
-<table>
-<tr>
-<td>
-<strong>Judul</strong>
-</td>
-<td>:</td>
-<td>PROGRAM_ALGORITMA_BISECTION</td>
-</tr>
-<tr>
-<td>
-<strong>Deklarasi</strong>
-</td>
-<td>:</td>
-<td>
-f(x) : function<br>
-a : integer<br>
-b : integer<br>
-e : integer = 10^-4 // nilai toleransi<br>
-n : integer = 100 // batasan iterasi<br>
-</td>
-</tr>
-</table>
+ALGORITMA **PROGRAM_PENCARIAN_AKAR_BISEKSI**
 
-**Algoritma :**
+DEKLARASI:
+
+- step : integer = 1
+- condition : boolean = true
+- a : integer
+- b : integer
+- c : integer
+- e : float = 0.0001 // nilai toleransi
+- n : integer = 100 // batasan iterasi
+
+DESKRIPSI:
 
 ```
-def f(x)
-
-read a, b, e dan n
+read(a, b)
 
 if f(a) x f(b) > 0 then
+  print('nilai harus diantara akar')
 else
-  step = 1
-  condition = true
+  while condition = true do
+    c <- (a + b) / 2
 
-  while condition = true then
-    c = (a + b) / 2
-
-    if f(a) x f(c) < 0
-      b = c
+    if f(a) x f(c) < 0 then
+      b <- c
     else
-      a = c
+      a <- c
+    end if
 
-    step + 1
-    condition = |f(c)| > e dan step <= n
+    step <- step + 1
 
-  print ditemukan akar = c
+    if (|f(c)| > e) and (step <= n) then
+      condition <- true
+    else
+      condition <- false
+    end if
+  end while
+
+  print('akar ditemukan: ', c)
+end if
 ```
 
 # Flowchart
