@@ -33,8 +33,8 @@ def bisection(a, b, e=10**-4, n=100):
     root = c
 
 
-a = float(1)
-b = float(2)
+a = float(0)
+b = float(1)
 
 if f(a) * f(b) > 0.0:
     print('Nilai yang diberikan harus diantara akar.')

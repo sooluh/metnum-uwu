@@ -87,8 +87,8 @@ def bisection(a, b, e=10**-4, n=100):
 
 '''
 pada screenshot di atas, menggunakan metode tabel untuk menentukan batas bawah dan batas atas
-didapat angka 1 sebagai batas bawah dan 2 sebagai batas atas
-angka tersebut dimasukkan kedalam fungsi float untuk menghasilkan nilai pecahan (1.0 dan 2.0)
+didapat angka 0 sebagai batas bawah dan 1 sebagai batas atas
+angka tersebut dimasukkan kedalam fungsi float untuk menghasilkan nilai pecahan (0.0 dan 1.0)
 '''
 a = float(0)
 b = float(1)
