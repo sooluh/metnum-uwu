@@ -1,13 +1,13 @@
 def f(x):
     '''
-    rumus persamaan: 2,05 x ^ 3 - 1,12 x ^ 3 - 4,23
+    rumus persamaan: 2,99 x ^ 5 - 1,12 x ^ 3 - 1,26
 
     , diketik menjadi . jika dalam bahasa pemrograman (aturan internasional)
     x adalah nilai variabel yang di "pass" ke dalam parameter fungsi f
 
     ** artinya ^ (pangkat)
     '''
-    return 2.05*x**3-1.12*x**3-4.23
+    return 2.99*x**5-1.12*x**3-1.26
 
 
 '''
@@ -90,8 +90,8 @@ pada screenshot di atas, menggunakan metode tabel untuk menentukan batas bawah d
 didapat angka 1 sebagai batas bawah dan 2 sebagai batas atas
 angka tersebut dimasukkan kedalam fungsi float untuk menghasilkan nilai pecahan (1.0 dan 2.0)
 '''
-a = float(1)
-b = float(2)
+a = float(0)
+b = float(1)
 
 '''
 divalidasi bahwa batas atas dan bawah memang benar bernilai 1 dan 2

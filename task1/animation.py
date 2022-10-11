@@ -7,7 +7,7 @@ sns.set()
 
 
 def f(x):
-    return 2.05*x**3-1.12*x**3-4.23
+    return 2.99*x**5-1.12*x**3-1.26
 
 
 # global variabel untuk animasi grafik
@@ -42,8 +42,8 @@ else:
     bisection(a, b)
 
 
-top = 0.75
-bottom = 2.25
+top = -1.125
+bottom = 1.25
 
 x = np.arange(top, bottom, 0.1)
 fig = plt.figure(figsize=(10, 6))

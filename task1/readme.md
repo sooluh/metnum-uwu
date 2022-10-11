@@ -21,7 +21,7 @@
 
 ```math
 \begin{equation}
-f(x) = 2.05x^3-1.12x^3-4.23
+f(x) = 2.99x^5-1.12x^3-1.26
 \end{equation}
 ```
 
